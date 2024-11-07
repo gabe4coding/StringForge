@@ -9,7 +9,7 @@
 _To install StringForge using Swift Package Manager (SPM), add the following line to your Package.swift file under dependencies:_
 
 ```swift
-.package(url: "https://github.com/username/StringForge.git", from: "1.0.0")
+.package(url: "https://github.com/gabe4coding/StringForge.git", from: "1.0.0")
 ```
 
 ## Features
