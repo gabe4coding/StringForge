@@ -5,6 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "StringForge",
+    platforms: [
+        .macOS(.v12),
+        .iOS(.v15),
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -20,5 +24,8 @@ let package = Package(
             name: "StringForgeTests",
             dependencies: ["StringForge"]
         ),
-    ]
+        .executableTarget(
+            name: "Examples",
+            dependencies: ["StringForge"]
+            )]
 )
